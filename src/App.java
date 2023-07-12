@@ -7,6 +7,10 @@ public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
 
+
+        // used to process group of data/collections
+
+        
         List<Integer> nums = Arrays.asList(6, 2, 7, 3, 9);
 
         Stream<Integer> data = nums.stream();
@@ -17,6 +21,7 @@ public class App {
         Stream<Integer> sortedData = data.sorted();
         Stream<Integer> mappedData = sortedData.map(n -> n * 2);
         mappedData.forEach(n -> System.out.println(n));
+
 
         Predicate<Integer> predi = n -> n%2 == 1;
 
