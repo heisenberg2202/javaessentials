@@ -9,6 +9,7 @@ public class App {
 
 
         // used to process group of data/collections
+        //powerful way to process collections of objects or arrays in a functional and declarative manner. 
 
         
         List<Integer> nums = Arrays.asList(6, 2, 7, 3, 9);
@@ -27,6 +28,7 @@ public class App {
 
         System.out.println("-------------------------");
         List<Integer> newNums = Arrays.asList(15,12,11,13,10,1);
+
         newNums.stream()
                 .filter(n -> n%2 == 1)
                 .sorted()
